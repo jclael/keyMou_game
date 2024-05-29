@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Columns with Clickable Images</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .left-column, .right-column {
+    width: 250px;
+    padding: 10px;
+    border: transparent;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+  }
+  .left-column {
+    margin-right: 200px; /* Adjust margin as needed */
+  }
+  .column-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-content img {
+    height: 40px; /* Set image height to 100px */
+    width: auto; /* Let the width adjust automatically to maintain aspect ratio */
+  }
+  .column-content img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="left-column">
+    <div class="column-content">
+      <a href="https://jclael.github.io/game_1/">
+        <img src="1.png" alt="Left Image" width="200" height="200">
+      </a>
+    </div>
+  </div>
+  <div class="right-column">
+    <div class="column-content">
+      <a href="https://jclael.github.io/game_2/">
+        <img src="2.png" alt="Right Image" width="200" height="200">
+      </a>
+    </div>
+  </div>
+  <div class="right-column">
+    <div class="column-content">
+      <a href="https://jclael.github.io/game_3/">
+        <img src="2.png" alt="Right Image" width="200" height="200">
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
